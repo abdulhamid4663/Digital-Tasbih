@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tasbih</title>
+
+    <!-- Tailwind daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- HEADER SECTION STARTS -->
+    <header class="header">
+        <div class="navbar bg-base-100">
+            <a class="btn btn-ghost normal-case text-xl">Digital Tasbih</a>
+        </div>
+    </header>
+    <!-- HEADER SECTION ENDS -->
+    <main class="mt-10">
+        <div class="container mx-auto px-4">
+            <h1 class="text-6xl font-bold text-center">Digital Tasbih</h1>
+
+            <!-- TASBIH CARDS SECTION STARTS-->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-36 gap-6 justify-center">
+
+                <!-- SUBHANALLAH SECTION STARTS -->
+                <div class="tasbih-card text-center p-10 lg:p-10 border-2 rounded-lg">
+                    <div>
+                        <h2 class="text-4xl font-semibold">SubhanAllah</h2>
+                        <p id="subhanAllahDisplay" class="text-5xl m-16">0</p>
+                    </div>
+                    <div>
+                        <button id="subhanAllahInrement" class="btn bg-accent text-white font-bold mt-4">Increment</button>
+                        <button id="subhanAllahDecrement" class="btn bg-error text-white font-bold mt-4">Decrement</button>
+                    </div>
+                </div>
+                <!-- SUBHANALLAH SECTION ENDS -->
+
+                <!-- ALHAMDULILLAH SECTION STARTS -->
+                <div class="tasbih-card text-center p-10 border-2 rounded-lg">
+                    <div>
+                        <h2 class="text-4xl font-semibold">Alhamdulillah</h2>
+                        <p id="alhamdulillahDisplay" class="text-5xl m-16">0</p>
+                    </div>
+                    <div>
+                        <button id="alhamdulillahInrement" class="btn bg-accent text-white font-bold mt-4">Increment</button>
+                        <button id="alhamdulillahDecrement" class="btn bg-error text-white font-bold mt-4">Decrement</button>
+                    </div>
+                </div>
+                <!-- ALHAMDULILLAH SECTION ENDS -->
+
+                <!-- ALLAHUAKBAR SECTION STARTS -->
+                <div class="tasbih-card text-center p-10 border-2 rounded-lg">
+                    <div>
+                        <h2 class="text-4xl font-semibold">AllahuAkbar</h2>
+                        <p id="allahuAkbarDisplay" class="text-5xl m-16">0</p>
+                    </div>
+                    <div>
+                        <button id="allahuAkbarInrement" class="btn bg-accent text-white font-bold mt-4">Increment</button>
+                        <button id="allahuAkbarDecrement" class="btn bg-error text-white font-bold mt-4">Decrement</button>
+                    </div>
+                </div>
+                <!-- ALLAHUAKBAR SECTION ENDS -->
+
+            </div>
+            <!-- TASBIH CARDS SECTION ENDS-->
+
+            <!-- RESET BUTTON SECTION STARTS -->
+            <div class="text-center mt-20">
+                <button id="resetBtn" class="btn text-2xl normal-case bg-error text-white">Reset All Value</button>
+            </div>
+            <!-- RESET BUTTON SECTION ENDS -->
+
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
