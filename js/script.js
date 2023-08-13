@@ -30,7 +30,7 @@ subhanAllahDecrement.addEventListener('click', function () {
 
 // Alhamdulillah Event Listener
 alhamdulillahInrement.addEventListener('click', function () {
-    if (alhamdulillahInitialValue === 33) return alert('Completed SubhanAllah');
+    if (alhamdulillahInitialValue === 33) return alert('Completed Alhamdulillah');
     alhamdulillahInitialValue += 1;
     alhamdulillahDisplay.innerText = alhamdulillahInitialValue;
 });
@@ -42,7 +42,7 @@ alhamdulillahDecrement.addEventListener('click', function () {
 
 // AllahuAkbar Event Listener
 allahuAkbarInrement.addEventListener('click', function () {
-    if (allahuAkbarInitialValue === 34) return alert('Completed SubhanAllah');
+    if (allahuAkbarInitialValue === 34) return alert('Completed AllahuAkbar');
     allahuAkbarInitialValue += 1;
     allahuAkbarDisplay.innerText = allahuAkbarInitialValue;
 });
